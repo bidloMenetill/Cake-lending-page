@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat";
+  overflow-x: hidden;
+}
+
+.backgroundSection {
+  background: url("./img/bg.jpg"), lightgray 50% / cover no-repeat;
+  background-size: cover;
+  height: 100vh;
+  flex-shrink: 0;
+
+  background-repeat: no-repeat;
+}
+li {
+  list-style: none;
+}

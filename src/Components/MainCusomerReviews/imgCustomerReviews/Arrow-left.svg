@@ -1,0 +1,9 @@
+<svg width="66.000000" height="66.000000" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<rect id="Rectangle" rx="33.000000" width="66.000000" height="66.000000" fill="#FED84C" fill-opacity="1.000000"/>
+	<path id="arrow" d="M34.6195 21.3201L34.6195 21.2919C35.4115 20.4999 36.656 20.4999 37.4479 21.2919C38.2399 22.0837 38.2399 23.3284 37.4479 24.1202L37.4197 24.1202L34.6195 21.3201ZM37.4197 42.0236L37.4479 42.0236C38.2399 42.8156 38.2399 44.0601 37.4479 44.8519C36.656 45.6439 35.4115 45.6439 34.6195 44.8519L34.6195 44.8237L37.4197 42.0236Z" fill="#FED84C" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="arrow" d="M36.0337 22.7061L25.6678 33.0719L36.0337 43.4377" stroke="#2E363E" stroke-opacity="1.000000" stroke-width="4.000000" stroke-linecap="round"/>
+</svg>

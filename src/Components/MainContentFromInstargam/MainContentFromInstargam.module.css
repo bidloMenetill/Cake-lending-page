@@ -1,0 +1,71 @@
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.innerMainContentFromInstargam {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.h2 {
+  color: rgb(46, 54, 62);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+.h3 {
+  color: rgb(46, 54, 62);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 143%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.eatWrapper {
+  width: 32.8%;
+}
+.rootEat {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 89px;
+}
+.eatImg {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* Медиа-запрос для экранов с шириной до 768px (например, мобильные устройства) */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px; /* Уменьшаем отступы по бокам контейнера на мобильных устройствах */
+  }
+
+  .innerMainContentFromInstargam {
+    align-items: center; /* Центрируем содержимое по вертикали на мобильных устройствах */
+  }
+
+  .h2 {
+    font-size: 36px; /* Уменьшаем размер шрифта заголовка на мобильных устройствах */
+    line-height: 1.2; /* Изменяем межстрочный интервал для лучшей читаемости на мобильных устройствах */
+  }
+
+  .h3 {
+    font-size: 18px; /* Уменьшаем размер шрифта подзаголовка на мобильных устройствах */
+    line-height: 1.5; /* Изменяем межстрочный интервал для лучшей читаемости на мобильных устройствах */
+    margin-top: 20px; /* Уменьшаем отступ сверху для подзаголовка на мобильных устройствах */
+  }
+
+  .eatWrapper {
+    width: 100%; /* Устанавливаем ширину элемента с фотографией на 100% на мобильных устройствах */
+  }
+
+  .rootEat {
+    margin-top: 40px; /* Уменьшаем отступ сверху для контейнера с фотографиями на мобильных устройствах */
+  }
+}

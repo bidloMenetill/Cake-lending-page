@@ -1,0 +1,145 @@
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+}
+.header {
+  /* margin-top: -1px; */
+  margin-bottom: 70px;
+}
+a {
+  text-decoration: none;
+
+  color: #fff;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.headerWrapper {
+}
+.headerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.menuItem {
+  display: flex;
+  align-items: center;
+}
+
+.menuList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 0 65px; */
+  gap: 0 20px;
+  flex-grow: 1;
+}
+.menuItemImg2 {
+  width: 36px;
+  height: 36px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+.menuItemImg2:hover {
+  transform: scale(1.2);
+}
+.menuItemImg {
+  width: 17px;
+  height: 17px;
+  /* margin-left: 274px; */
+  margin-right: -8px;
+  margin-top: -8px;
+  transition: transform 0.5s ease-in-out;
+}
+.menuItemImg:hover {
+  transform: scale(1.4);
+}
+.menuItemImg3 {
+  display: block;
+}
+.menuLinkOwner {
+  /* Текст / 21px, Medium */
+
+  font-family: Montserrat;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 143%; /* 30.03px */
+}
+.menuLinkPhone {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 142%; /* 30.4px */
+}
+.brShedule {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 19.5px */
+}
+.shedulerSpan {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 19.5px */
+}
+.menuLinkMap {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+}
+.menuItem3 {
+  margin-left: 69px;
+}
+.liContainer {
+  display: flex;
+  justify-content: end;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 100%; /* Максимальная ширина контейнера на мобильных устройствах */
+  }
+
+  .header {
+    margin-bottom: 50px; /* Уменьшаем отступ внизу на мобильных устройствах */
+  }
+
+  .menuList {
+    gap: 0 10px; /* Уменьшаем промежуток между пунктами меню на мобильных устройствах */
+  }
+
+  .menuItemImg2 {
+    width: 30px; /* Уменьшаем размер иконки телефона на мобильных устройствах */
+    height: 30px;
+  }
+
+  .menuLinkPhone {
+    font-size: 18px; /* Уменьшаем размер текста номера телефона на мобильных устройствах */
+  }
+
+  .shedulerSpan {
+    font-size: 11px; /* Уменьшаем размер текста расписания на мобильных устройствах */
+  }
+
+  .menuLinkMap {
+    font-size: 10px; /* Уменьшаем размер текста адреса на мобильных устройствах */
+  }
+
+  .menuItem3 {
+    margin-left: 0; /* Убираем отступ слева для блока с номером телефона на мобильных устройствах */
+  }
+}

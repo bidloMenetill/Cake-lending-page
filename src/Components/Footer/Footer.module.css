@@ -1,0 +1,202 @@
+.footer {
+  background: rgb(8, 17, 48);
+}
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.footerInner {
+  /* Form */
+  margin-bottom: 80px;
+  width: 1180px;
+  height: 394px;
+
+  /* Автолейаут */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 70px 99px 70px 99px;
+  border-radius: 8px;
+
+  /* Белый */
+  background: rgb(255, 255, 255);
+}
+.h2 {
+  color: rgb(46, 54, 62);
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 133%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.h3 {
+  color: rgb(46, 54, 62);
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 143%;
+  letter-spacing: -0.2px;
+  text-align: center;
+}
+.skyDown {
+  max-width: 100%;
+  height: 100%;
+}
+.form {
+  margin: 36.5px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.inputNumber {
+  position: relative;
+  width: 380px;
+  height: 85px;
+  margin: 0px 20px;
+  border-radius: 8px;
+  background: rgb(242, 246, 250);
+  color: rgb(126, 134, 142);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 58px;
+  padding-top: 32px;
+  padding-bottom: 29px;
+  background-image: url("../Header//headerImg/phone.png.jpg");
+  background-size: 23px; /* Размер вашей иконки */
+
+  background-repeat: no-repeat;
+  background-position: 20px center; /* Расположение иконки */
+}
+.inputNumberNotMask {
+  position: relative;
+  width: 380px;
+  height: 85px;
+  margin: 0px 20px;
+  border-radius: 8px;
+  background: rgb(242, 246, 250);
+  color: rgb(126, 134, 142);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 58px;
+  padding-top: 32px;
+  padding-bottom: 29px;
+}
+.button {
+  /* Button */
+  position: static;
+  width: 380px;
+  height: 86px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 29px 41px 29px 41px;
+  transition: background-color 0.5s ease-in-out;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 20px;
+  border-radius: 8px;
+
+  /* Оранжевый */
+  background: rgb(254, 216, 76);
+  color: rgb(46, 54, 62);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 152%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+button:hover {
+  background-color: aqua;
+}
+.phoneInputWrapper {
+  display: flex;
+}
+.checkboxWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.checkbox {
+  border: 1px solid rgb(255, 255, 255);
+}
+.checkboxLabel {
+  color: rgb(126, 134, 142);
+  font-family: Montserrat;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: 9px;
+}
+.footerText {
+  color: rgb(126, 134, 142);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.wrapperUl {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  gap: 10px 30px;
+}
+.ul {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  text-align: center;
+}
+.ul:last-child {
+  padding-top: 40px;
+}
+/* Медиа-запрос для устройств с шириной экрана до 768px (например, планшеты и мобильные устройства в горизонтальной ориентации) */
+@media only screen and (max-width: 768px) {
+  .footerInner {
+    width: 90%; /* Изменяем ширину блока для лучшей адаптивности */
+    padding: 50px; /* Изменяем отступы для лучшего расположения элементов */
+  }
+  .inputNumber,
+  .button {
+    width: 100%; /* Растягиваем поля ввода и кнопку на всю ширину контейнера */
+    margin: 10px 0; /* Устанавливаем отступы между элементами */
+  }
+  .ul {
+    flex-direction: column; /* Выстраиваем элементы списка вертикально */
+  }
+}
+
+/* Дополнительный медиа-запрос для устройств с шириной экрана до 480px (например, узкие мобильные устройства) */
+@media only screen and (max-width: 480px) {
+  .h2 {
+    font-size: 28px; /* Уменьшаем размер заголовка */
+  }
+  .h3 {
+    font-size: 18px; /* Уменьшаем размер второго заголовка */
+  }
+  .inputNumber,
+  .button {
+    font-size: 14px; /* Уменьшаем размер текста в полях ввода и кнопке */
+  }
+}

@@ -1,0 +1,157 @@
+.main {
+}
+.container {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+}
+.buttonDelicious {
+  display: flex;
+  height: 37px;
+  padding: 10px 18px;
+  align-items: center;
+  gap: 10px;
+  color: black;
+  font-family: Montserrat;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 16.5px */
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #f2f6fa;
+  border-color: none;
+  margin-bottom: 24px;
+}
+.buttonDelicious:hover {
+  background-color: aquamarine;
+}
+.headerContentH1 {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Заголовки / 48px, Bold */
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+.headerContentH3 {
+  color: #fff;
+
+  /* Текст / 24px, Regular */
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 143%; /* 34.32px */
+  margin-bottom: 40px;
+}
+.linkWrapper {
+  display: flex;
+  align-items: center;
+}
+.linkButton {
+  border-radius: 8px;
+  background-color: #fed84c;
+  display: flex;
+  padding: 30px 50px;
+  align-items: center;
+  gap: 10px;
+  color: var(---, #2e363e);
+  text-align: center;
+
+  /* Текст / 18px, Medium */
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 152%; /* 27.36px */
+  margin-right: 20px;
+  transition: 0.4s ease;
+}
+.linkButton:hover {
+  background-color: aquamarine;
+}
+.headerContentP {
+  color: #fff;
+
+  /* Текст / 15px, Regular */
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 24px */
+}
+.imgBerry1 {
+  width: 195.651px;
+  height: 201.405px;
+  transform: rotate(-148.507deg);
+  flex-shrink: 0;
+  position: absolute;
+  bottom: -360px;
+  right: -35px;
+}
+.imgBerry3 {
+  position: absolute;
+
+  top: -180px;
+  right: -165px;
+  width: 170px;
+  height: 175px;
+  transform: rotate(28.319deg);
+  flex-shrink: 0;
+}
+.imgBerry2 {
+  position: absolute;
+  left: -188px;
+  top: -150px;
+  width: 195.651px;
+  height: 201.405px;
+  transform: rotate(-45.174deg);
+  flex-shrink: 0;
+}
+/* Медиа-запрос для экранов с шириной до 768px (например, мобильные устройства) */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Изменяем направление flex контейнера на колонку */
+  }
+
+  .buttonDelicious {
+    margin-bottom: 10px; /* Уменьшаем отступ снизу у кнопки на мобильных устройствах */
+  }
+
+  .headerContentH1 {
+    font-size: 36px; /* Уменьшаем размер заголовка на мобильных устройствах */
+    line-height: 1.2; /* Изменяем межстрочный интервал для лучшей читаемости на мобильных устройствах */
+    margin-bottom: 20px; /* Уменьшаем отступ снизу у заголовка на мобильных устройствах */
+  }
+
+  .headerContentH3 {
+    font-size: 18px; /* Уменьшаем размер подзаголовка на мобильных устройствах */
+    line-height: 1.5; /* Изменяем межстрочный интервал для лучшей читаемости на мобильных устройствах */
+    margin-bottom: 30px; /* Уменьшаем отступ снизу у подзаголовка на мобильных устройствах */
+  }
+
+  .linkButton {
+    padding: 15px 30px; /* Уменьшаем отступы кнопки на мобильных устройствах */
+    font-size: 16px; /* Уменьшаем размер текста кнопки на мобильных устройствах */
+    margin-right: 0; /* Убираем отступ справа у кнопки на мобильных устройствах */
+  }
+
+  .headerContentP {
+    font-size: 13px; /* Уменьшаем размер текста абзаца на мобильных устройствах */
+  }
+
+  .imgBerry1,
+  .imgBerry2,
+  .imgBerry3 {
+    display: none; /* Скрываем изображения ягод на мобильных устройствах */
+  }
+}

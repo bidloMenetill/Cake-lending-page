@@ -1,0 +1,234 @@
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+.innerMainEmployeePresentation {
+  display: flex;
+}
+.employeePresentationP {
+  color: #2e363e;
+  position: relative;
+  /* Текст / 18px, Regular */
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  margin-bottom: 30px;
+}
+.employeePresentationP::before {
+  content: ""; /* Обязательное свойство для псевдоэлемента */
+  position: absolute;
+  top: 7px;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  background: url("./ImgMainEmployeePresentation/1.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+.employeePresentationH2 {
+  margin-top: 24px;
+  margin-bottom: 36px;
+  color: #2e363e;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Заголовки / 48 px, Medium */
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px; /* 125% */
+  letter-spacing: -1px;
+}
+.buttonAnswer {
+  color: #2e363e;
+  display: flex;
+  height: 37px;
+  padding: 10px 18px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: #f2f6fa;
+  font-family: Montserrat;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 16.5px */
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  transition: 0.3s ease;
+}
+.buttonEmployee {
+  margin-top: 50px;
+  border-radius: 8px;
+  background-color: #fed84c;
+  transition: background-color 0.3s ease;
+  display: flex;
+  padding: 30px 50px;
+  align-items: center;
+  gap: 10px;
+  color: #2e363e;
+  text-align: center;
+  cursor: pointer;
+  /* Текст / 18px, Medium */
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 152%; /* 27.36px */
+  transition: 0.3s ease;
+}
+.infoWrapper {
+  margin-top: 97px;
+}
+.buttonEmployee:hover {
+  background-color: aquamarine;
+}
+
+.buttonAnswer:hover {
+  background-color: aquamarine;
+}
+.initialsWrapper {
+  position: relative;
+}
+.womanImg {
+  width: 487px;
+  height: 652px;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+.circleWrapper {
+  border-radius: 580px;
+  background-color: #fed84c;
+  width: 580px;
+  height: 580px;
+  flex-shrink: 0;
+  z-index: -2;
+  position: absolute;
+  bottom: -16px;
+  right: -38px;
+}
+.doubleImgWrapper {
+  margin-left: 102px;
+  position: relative;
+}
+.woman2 {
+  width: 487px;
+  position: absolute;
+  top: 224px;
+  right: 0px;
+  z-index: -1;
+  border-radius: 200px;
+}
+.employeeCircleH3 {
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  display: block;
+  width: max-content;
+  gap: 10px;
+  background: var(--1, #2e363e);
+  padding: 15px 10px;
+  position: relative;
+  border-radius: 50px;
+  transition: transform 0.5s ease;
+  margin-bottom: 2px;
+}
+.employeeCircleH3:hover {
+  transform: scale(1.1);
+}
+.employeeCircleP {
+  color: var(--1, #2e363e);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  width: max-content;
+  gap: 10px;
+  background: var(--11, #f2f6fa);
+  padding: 15px 10px;
+  margin: 0px 34.5px;
+  position: relative;
+  border-radius: 60px;
+  transition: transform 0.3s ease;
+}
+.employeeCircleP:hover {
+  transform: scale(1.1);
+}
+
+.wrapperCircleText {
+  display: flex;
+  flex-direction: column;
+}
+.skydown {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* Медиа-запрос для устройств с шириной экрана до 768px (например, планшеты и мобильные устройства в горизонтальной ориентации) */
+@media only screen and (max-width: 768px) {
+  .innerMainEmployeePresentation {
+    flex-direction: column-reverse; /* Изменяем направление контейнера на вертикальное, чтобы информация была над изображением */
+  }
+
+  .infoWrapper {
+    margin-top: 0; /* Убираем верхний отступ */
+    text-align: center; /* Выравниваем текст по центру */
+  }
+
+  .initialsWrapper {
+    display: flex;
+    justify-content: center; /* Центрируем содержимое внутри контейнера */
+    margin-top: 50px; /* Добавляем отступ сверху для изображений */
+  }
+
+  .doubleImgWrapper {
+    margin-left: 0; /* Убираем отступ слева для контейнера с изображениями */
+  }
+
+  .womanImg,
+  .woman2 {
+    width: 100%; /* Ширина изображений на всю ширину контейнера */
+    height: auto; /* Автоматическая высота */
+    margin-left: 0; /* Убираем отступ слева */
+  }
+
+  .circleWrapper {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    bottom: -100px;
+    right: calc(50% - 175px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .employeePresentationH2 {
+    font-size: 32px;
+  }
+
+  .employeePresentationP {
+    font-size: 16px;
+  }
+
+  .buttonAnswer,
+  .buttonEmployee {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+}

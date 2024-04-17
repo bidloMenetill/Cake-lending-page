@@ -1,0 +1,138 @@
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.mainCatalogH2 {
+  margin-top: 105px;
+  color: #2e363e;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: -1px;
+}
+.catalogWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  gap: 0 20px;
+}
+.cakeInner {
+  height: 582px;
+  width: 380px;
+}
+.imgCake {
+  width: 380px;
+  height: 245px;
+}
+.infoWrapperCake {
+  margin: 50px 45px;
+}
+.nameCake {
+  color: #2e363e;
+
+  /* Текст / 24px, Bold */
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 143%; /* 34.32px */
+  margin-bottom: 12px;
+}
+.titleCake {
+  color: #2e363e;
+
+  /* Текст / 16px, Regular */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin-bottom: 24px;
+}
+.priceCake {
+  color: #434b53;
+
+  /* Текст / 24px, Medium */
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+  margin-bottom: 10px;
+}
+.linkButtonCake {
+  cursor: pointer;
+  color: #2e363e;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 152%; /* 27.36px */
+  display: flex;
+  padding: 20px 40px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background-color: #fed84c;
+  transition: 0.3s ease;
+}
+.linkButtonCake:hover {
+  background-color: aquamarine;
+}
+/* Медиа-запрос для экранов с шириной до 768px (например, мобильные устройства) */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px; /* Уменьшаем отступы по бокам контейнера на мобильных устройствах */
+  }
+
+  .mainCatalogH2 {
+    margin-top: 50px; /* Уменьшаем отступ сверху для заголовка на мобильных устройствах */
+    font-size: 36px; /* Уменьшаем размер шрифта заголовка на мобильных устройствах */
+    line-height: 1.2; /* Изменяем межстрочный интервал для лучшей читаемости на мобильных устройствах */
+  }
+
+  .catalogWrapper {
+    margin-top: 50px; /* Уменьшаем отступ сверху для блока каталога на мобильных устройствах */
+  }
+
+  .cakeInner {
+    width: 100%; /* Устанавливаем ширину элемента каталога на 100% на мобильных устройствах */
+    margin-bottom: 30px; /* Уменьшаем отступ снизу для элементов каталога на мобильных устройствах */
+  }
+
+  .imgCake {
+    width: 100%; /* Устанавливаем ширину изображения на 100% на мобильных устройствах */
+    height: auto; /* Автоматический подбор высоты изображения на мобильных устройствах */
+  }
+
+  .infoWrapperCake {
+    margin: 20px; /* Уменьшаем отступ внутри обертки с информацией о товаре на мобильных устройствах */
+  }
+
+  .nameCake {
+    font-size: 20px; /* Уменьшаем размер шрифта названия товара на мобильных устройствах */
+  }
+
+  .titleCake {
+    font-size: 14px; /* Уменьшаем размер шрифта описания товара на мобильных устройствах */
+    margin-bottom: 12px; /* Уменьшаем отступ снизу для описания товара на мобильных устройствах */
+  }
+
+  .priceCake {
+    font-size: 20px; /* Уменьшаем размер шрифта цены товара на мобильных устройствах */
+    margin-bottom: 10px; /* Уменьшаем отступ снизу для цены товара на мобильных устройствах */
+  }
+
+  .linkButtonCake {
+    font-size: 16px; /* Уменьшаем размер шрифта кнопки на мобильных устройствах */
+    padding: 15px 30px; /* Уменьшаем отступы кнопки на мобильных устройствах */
+  }
+}
